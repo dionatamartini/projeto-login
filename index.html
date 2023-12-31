@@ -6,26 +6,41 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link rel="stylesheet" href="estilos/mobile-first.css">
+      <link rel="stylesheet" href="estilos/media-query.css">
     <title>Projeto Login</title>
 </head>
 <body>
     <main>
+      
+    <div class="texto">
         <h1>Login</h1>
-        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-        <div>
-            imagem
-        </div>
+        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente<p>
+    
 
         <form action="#" method="post" autocomplete="on">
-            <label for="email"><span class="material-icons">person</span></label>
-            <input type="email" name="email" id="email" placeholder="seu e-mail"><br>
 
-            <label for="senha"><span class="material-icons">vpn_key</span></label>
-            <input type="password" name="senha" id="senha" placeholder="sua senha"><br>
+            <div class="input">
 
-            <button id="submit" type="submit">Entrar</button>
-            <a href="#">Esqueci minha senha</a>
+                <div class="campo01">
+                    <label for="email"><span class="material-icons">person</span></label>
+                    <input type="email" name="email" id="email" placeholder="seu e-mail">
+                </div>
+
+                <div class="campo02">
+                    <label for="senha"><span class="material-icons">vpn_key</span></label>
+                    <input type="password" name="senha" id="senha" placeholder="sua senha">
+                </div>
+
+            </div>
+
+            <div class="botao">
+                <button id="submit" type="submit">Entrar</button><br>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+
         </form>
+    </div>
+
     </main>
     
 </body>

@@ -10,85 +10,114 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
     height: 100vh;
+    margin: 0;
     background-image: linear-gradient(to top, #4C949B , #507A94 , #58518B , #5F3083); 
 }
 
 main {
     position: relative;
-    height: 33vh;
-    width: 80vw;
+    width: 50vw;
+    height: 65vh;
     margin: auto;
+    padding: 5px;
+    border-radius: 15px;
     background-color: white;
-    border-radius: 10px;
-    padding: 10px;
+    overflow: hidden;
+    background-image: url('../imagem/pexels-bruno-thethe-3035998.jpg');
+    background-size: 100% 45%; /* Ajusta o tamanho para cobrir completamente o elemento */
+    background-position: center top;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.476);
 }
 
+.texto {
+    position: absolute;
+    top: 50%;
+    margin-left: 0.3em;
+}
 
 h1 {
     text-align: center;
-    margin: 0em 1em 0.5em 8em;
-    font-size: 1.2em;
+    margin: 10px;
 }
 
-p {
-    font-size: 0.7em;
-    margin-left: 23vw;
+.texto p {
+    font-size: 0.6em;
+    text-align: left;
+    margin-bottom: 1em;
 }
 
-form {
-    margin-top: 5px;
-    font-size: 0.7em;
-    margin-left: 23vw;
-}
-
-input#email , input#senha {
+#email , #senha {
+    width: 36vw;
     border-radius: 5px;
-    padding: 8px;
-    margin-bottom: 8px;
-    width: 50.5vw;
+    padding: 5px;
+    border: 1px solid #5F2C82;
     background-color: #94CFCD;
-    border: 10px 4px 0px;
+    
 }
 
-button#submit {
-    border: 1px solid #4B979B;
+::placeholder {
+    font-size: 12px;
+    color: #458d8a;
+}
+
+.campo01 , .campo02 {
+    display: flex;
+    align-items: center;
+    background-color: #5F2C82;
+    width: 45vw;
+    padding: 1px;
+    border-style: solid;
+    border-color: #5F2C82;
+    border-width: 1px 1px 0px;
     border-radius: 5px;
-    display: block;
-    width: 54vw;
-    padding: 10px;
-    margin-bottom: 5px;
+}
+
+span {
     color: white;
-    background-color: #94CFCD;
+    background-color: #5F2C82;
+    margin-right: 0.2em;
 }
 
-a {
-    border: 1px solid #4B979B;
-    text-decoration: none;
+.campo02{
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+#submit {
+    width: 45vw;
     border-radius: 5px;
-    display: block;
-    width: 54vw;
-    padding: 10px;
-    text-align: center;
-    color: #4B979B;
+    padding: 8px 0;
+    border: 0px;
+    color: white;
+    background-color: #53AAA7;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-bottom: 0.3em;
 }
 
-button#submit:hover {
+#submit:hover {
     background-color: #2D6462;
+}
+
+.botao a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 45vw;
+    border-radius: 5px;
+    padding: 8px 0;
+    border: 1px solid #53AAA7;
+    color: #458d8a;
+    background-color: fffff;
+    font-size: 0.8em;
+    cursor: pointer;
 }
 
 a:hover {
     background-color: #6CD3CF;
 }
 
-
-span {
-    background-color: #5F2C82;
-}
-
-div {
-    display: inline-block;
-    width: 22vw;
-    height: 20vh;
-    background-color: #2D6462;
-}
