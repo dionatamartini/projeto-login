@@ -3,10 +3,77 @@
 @media screen and (min-width: 768px) {
     main {
         width: 90vw;
+        height: 40vh;
+        background-size: 48% 100%; /* Ajusta o tamanho para cobrir completamente o elemento */
+        background-position: right top;
+        background-repeat: no-repeat;
     }
 
+    .texto {
+        position: absolute;
+        right: 40%;
+        top: 0;   
+    }
 
+    .texto p {
+        width: 85%;
+        font-size: 0.8em;
+        margin-bottom: 2em;
+        
+    }
+
+    h1 {
+        margin-right: 3em;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+    
+    #email , #senha {
+        width: 41vw;
 
 
 
 }
+
+@media screen and (min-width: 1200px) {
+        main {
+        width: 70vw;
+        height: 42vh;
+        background-size: 48% 100%; /* Ajusta o tamanho para cobrir completamente o elemento */
+        background-attachment: fixed;
+        }
+
+        .texto p {
+            width: 88%;
+            font-size: 1em;
+            margin-left: 1em; 
+        }
+
+        h1 {
+            margin-top: 1em;
+            margin-right: 4em;
+        }
+
+        #email , #senha {
+            width: 100vw;
+            margin-left: 2em;
+        }
+
+        .campo01 , .campo02 {
+            width: 35vw;
+            margin-left: 0.8em;
+        }
+
+        span {
+            margin-left: 1.3em;
+        }
+
+        #submit {
+            width: 35vw;
+            margin-left: 1em;
+        }
+
+        .botao a {
+            width: 35vw;
+            margin-left: 1em;
+
